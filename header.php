@@ -17,6 +17,7 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
     <meta name="author" content="<?php echo $page_author; ?>">
     <meta name="robots" content="index, follow">
     <title><?php echo $page_title; ?></title>
+    <link rel="icon" href="fav.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com/3.4.16"></script>
     <script>
         tailwind.config = {
@@ -71,7 +72,8 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
                 <!-- Logo -->
                 <div class="flex items-center">
                     <a href="index.php" class="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
-                        <h1 class="font-['Pacifico'] text-3xl text-primary">Campus Hustle Kenya</h1>
+                        <img src="fav.png" alt="Campus Hustle Kenya Logo" class="h-10 w-10">
+                        <h1 class="font-['Pacifico'] text-3xl text-primary">Campus Hustle</h1>
                     </a>
                 </div>
                 <!-- Desktop Navigation -->

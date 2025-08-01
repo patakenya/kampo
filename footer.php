@@ -8,7 +8,7 @@
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Brand Section -->
             <div>
-                <h3 class="font-['Pacifico'] text-2xl text-white mb-4">Campus Hustle Kenya</h3>
+                <h3 class="font-['Pacifico'] text-2xl text-white mb-4">Campus Hustle</h3>
                 <p class="text-gray-300 text-sm mb-4">Empowering Kenyan students to earn money through flexible online gigs with instant M-Pesa payouts.</p>
                 <div class="flex space-x-4">
                     <a href="https://wa.me/+254700123456" class="text-gray-300 hover:text-white transition-colors" aria-label="WhatsApp">
@@ -29,11 +29,11 @@
             <div>
                 <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
                 <ul class="text-gray-300 text-sm space-y-2">
-                    <li><a href="#features" class="hover:text-blue-400 transition-colors">Features</a></li>
-                    <li><a href="#how-it-works" class="hover:text-blue-400 transition-colors">How It Works</a></li>
-                    <li><a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a></li>
-                    <li><a href="#tasks" class="hover:text-blue-400 transition-colors">Tasks</a></li>
-                    <li><a href="#blog" class="hover:text-blue-400 transition-colors">Blog</a></li>
+                    
+                    <li><a href="how-it-works.php" class="hover:text-blue-400 transition-colors">How It Works</a></li>
+                    <li><a href="pricing.php" class="hover:text-blue-400 transition-colors">Pricing</a></li>
+                    <li><a href="gigs.php" class="hover:text-blue-400 transition-colors">Gigs</a></li>
+                    
                 </ul>
             </div>
             <!-- Support Links -->
@@ -43,7 +43,7 @@
                     <li><a href="mailto:support@campushustle.co.ke" class="hover:text-blue-400 transition-colors">Contact Us</a></li>
                     <li><a href="/privacy" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
                     <li><a href="/terms" class="hover:text-blue-400 transition-colors">Terms of Service</a></li>
-                    <li><a href="/faq" class="hover:text-blue-400 transition-colors">FAQ</a></li>
+                    <li><a href="faq.php" class="hover:text-blue-400 transition-colors">FAQ</a></li>
                 </ul>
             </div>
             <!-- Newsletter Subscription -->
@@ -64,7 +64,8 @@
             </div>
         </div>
         <!-- Bottom Bar -->
-        <div class="mt-12 pt-8 border-t border-gray-800 text-center">
+        <div class="mt-6 pt-4 border-t border-gray-800 text-center">
+
             <p class="text-gray-400 text-sm">&copy; 2025 Campus Hustle Kenya. All rights reserved.</p>
         </div>
     </div>
