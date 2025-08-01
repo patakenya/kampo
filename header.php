@@ -71,7 +71,7 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="flex items-center">
-                    <a href="index.php" class="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
+                    <a href="/." class="flex items-center space-x-2 transition-transform duration-200 hover:scale-105">
                         <img src="fav.png" alt="Campus Hustle Kenya Logo" class="h-10 w-10">
                         <h1 class="font-['Pacifico'] text-3xl text-primary">Campus Hustle</h1>
                     </a>
@@ -97,7 +97,7 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
                 </button>
             </div>
             <!-- Mobile Navigation -->
-            <nav id="mobile-menu" class="hidden md:hidden bg-white flex-col space-y-4 py-6 px-6 border-t border-gray-200 transition-all duration-300" aria-label="Mobile navigation">
+            <nav id="mobile-menu" class="hidden md:hidden flex flex-col bg-white space-y-4 py-6 px-6 border-t border-gray-200 transition-all duration-300" aria-label="Mobile navigation">
                 <a href="how_it_works.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">How It Works</a>
                 <a href="pricing.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Pricing</a>
                 <a href="gigs.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Gigs</a>
