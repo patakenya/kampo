@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['membership_tier'])) {
                 <div class="text-4xl font-bold text-secondary mb-4">KES 1,000<span class="text-base text-gray-500">/one-time</span></div>
                 <ul class="text-gray-600 space-y-3 mb-6 text-sm">
                     <li class="flex items-center justify-center">
-                        <i class="ri-check-line text-secondary mr-2"></i> Access to all gigs (KES 100–1,000)
+                        <i class="ri-check-line text-secondary mr-2"></i> Access to all gigs (KES 500–1,500)
                     </li>
                     <li class="flex items-center justify-center">
                         <i class="ri-check-line text-secondary mr-2"></i> 30 gig applications

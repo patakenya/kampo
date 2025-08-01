@@ -1,7 +1,6 @@
 <?php
 // header.php
 
-
 // Ensure variables are defined
 $page_title = isset($page_title) ? htmlspecialchars($page_title) : "Campus Hustle Kenya";
 $page_description = isset($page_description) ? htmlspecialchars($page_description) : "Earn money online as a Kenyan student with flexible gigs.";
@@ -86,10 +85,8 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
                         <a href="dashboard.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Dashboard</a>
                         <a href="logout.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Log Out</a>
                     <?php else: ?>
-                        <a href="login.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Log In</a>
-                        <a href="register.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-button font-medium text-base hover:shadow-lg transition-all duration-200">
-                            Sign Up
-                        </a>
+                        <a href="login.php" class="bg-primary text-white  hover:bg-gray-200 hover:text-primary px-6 py-2 rounded-button font-medium text-base transition-all duration-200">Login</a>
+                        <a href="register.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white  px-6 py-2 rounded-button font-medium text-base hover:shadow-lg transition-all duration-200">Sign Up</a>
                     <?php endif; ?>
                 </nav>
                 <!-- Mobile Menu Button -->
@@ -108,11 +105,38 @@ $page_author = isset($page_author) ? htmlspecialchars($page_author) : "Campus Hu
                     <a href="dashboard.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Dashboard</a>
                     <a href="logout.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Log Out</a>
                 <?php else: ?>
-                    <a href="login.php" class="text-gray-600 hover:text-primary font-medium text-base transition-colors duration-200">Log In</a>
-                    <a href="register.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-button font-medium text-base hover:shadow-lg transition-all duration-200 text-center">
-                        Sign Up
-                    </a>
+                    <a href="login.php" class="bg-primary text-white hover:bg-gray-200 hover:text-primary px-6 py-2 rounded-button font-medium text-base transition-all duration-200 text-center">Log In</a>
+                    <a href="register.php" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-button font-medium text-base hover:shadow-lg transition-all duration-200 text-center">Sign Up</a>
                 <?php endif; ?>
             </nav>
         </div>
     </header>
+
+    <!-- Inline JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                // Toggle the menu icon between hamburger and close
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.toggle('ri-menu-line');
+                icon.classList.toggle('ri-close-line');
+            });
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                    // Reset to hamburger icon
+                    const icon = mobileMenuButton.querySelector('i');
+                    icon.classList.remove('ri-close-line');
+                    icon.classList.add('ri-menu-line');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -19,11 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php include 'header.php'; ?>
 
 <!-- Contact Section -->
+
+<section id="contact-hero" class="py-20 bg-gradient-to-r from-blue-600 to-green-500 relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <h2 class="text-4xl md:text-5xl font-bold text-white text-center mb-8 animate-fade-in">Get in Touch</h2>
+        <p class="text-lg text-gray-100 text-center mb-12 max-w-2xl mx-auto animate-fade-in">Have questions or need support? Reach out to our team, and we’ll respond as soon as possible!</p>
+    </div>
+</section>
 <section id="contact" class="py-16 bg-gray-50">
     <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Contact Us</h2>
-        <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Have questions or need support? Reach out to our team, and we’ll respond as soon as possible!</p>
-        
         <!-- Success Message -->
         <?php if (isset($success_message)): ?>
             <div class="bg-green-100 border border-green-200 rounded-lg p-4 mb-8 text-center">
@@ -51,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <input
                             type="email"
                             name="email"
-                            placeholder="e.g., student@university.ac.ke"
+                            placeholder="e.g., johndoe@email.com"
                             class="w-full px-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                             required
                         >
@@ -74,33 +79,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </button>
                 </form>
             </div>
-            <!-- Contact Info -->
-            <div class="text-center md:text-left">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">Get in Touch</h3>
-                <p class="text-gray-600 mb-4">We’re here to help you succeed with Campus Hustle Kenya. Reach out via email, phone, or social media.</p>
-                <ul class="text-gray-600 space-y-4">
+             <!-- Contact Info -->
+            <div class="text-center md:text-left animate-slide-up">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
+                <p class="text-gray-600 mb-6">We’re here to help you succeed with Campus Hustle Kenya. Reach out via email, phone, or social media.</p>
+                <ul class="text-gray-600 space-y-4 mb-6">
                     <li class="flex items-center justify-center md:justify-start">
-                        <i class="ri-mail-line text-primary mr-2"></i>
-                        <a href="mailto:support@campushustle.co.ke" class="hover:text-primary">support@campushustle.co.ke</a>
+                        <i class="ri-mail-line text-primary mr-3 text-xl"></i>
+                        <a href="mailto:support@campushustle.co.ke" class="hover:text-primary transition-colors">support@campushustle.co.ke</a>
                     </li>
                     <li class="flex items-center justify-center md:justify-start">
-                        <i class="ri-phone-line text-primary mr-2"></i>
-                        <a href="tel:+254700123456" class="hover:text-primary">+254 700 123 456</a>
+                        <i class="ri-phone-line text-primary mr-3 text-xl"></i>
+                        <a href="tel:+254700123456" class="hover:text-primary transition-colors">+254 700 123 456</a>
                     </li>
                     <li class="flex items-center justify-center md:justify-start">
-                        <i class="ri-whatsapp-line text-primary mr-2"></i>
-                        <a href="https://wa.me/+254700123456" class="hover:text-primary">WhatsApp Us</a>
+                        <i class="ri-whatsapp-line text-primary mr-3 text-xl"></i>
+                        <a href="https://wa.me/+254700123456" class="hover:text-primary transition-colors">WhatsApp Us</a>
                     </li>
                 </ul>
-                <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                <div class="flex justify-center md:justify-start space-x-6">
                     <a href="https://instagram.com/campushustleke" class="text-gray-600 hover:text-primary transition-colors" aria-label="Instagram">
-                        <i class="ri-instagram-line text-xl"></i>
+                        <i class="ri-instagram-line text-2xl"></i>
                     </a>
                     <a href="https://twitter.com/campushustleke" class="text-gray-600 hover:text-primary transition-colors" aria-label="Twitter">
-                        <i class="ri-twitter-line text-xl"></i>
+                        <i class="ri-twitter-line text-2xl"></i>
                     </a>
                     <a href="https://tiktok.com/@campushustleke" class="text-gray-600 hover:text-primary transition-colors" aria-label="TikTok">
-                        <i class="ri-tiktok-line text-xl"></i>
+                        <i class="ri-tiktok-line text-2xl"></i>
                     </a>
                 </div>
             </div>
